@@ -216,22 +216,6 @@ def update_output_varelager():
         output_field.insert(tk.END, str(item) + "\n")
         
 
-    # 1. Mapper touples fra databasen til spesifikke objekter
-    # 1.1 Henter verdiene fra Class Vare
-    # 1.2 Populerer variablene fra Class Vare til varetouplesfradb[0] - [3]
-        #Eksempel: Dette er sånn at Varenummer får den første verdien fra touplen (der informasjonen om varenummer faktisk ligger).
-    # kobler seg til databasen og lager en cursor (?)
-    ## kjører den spesifikke stored proceduresn 
-    # Lager en tom liste som heter varer
-    #For-loop som henter resultatene fra stored-proceduren:
-        #Varetupplerfradb = alle verdier
-            #deler alle verdiene inn i kolonner basert på toupler (en tuple er en kolonne)
-            # vare = kjør mappe-funksjonen på hver varetupple
-            # vareer.append(vare) = legg de i listen vare.
-    # mapper resultatet til objekter
-    # returner objekten
-    # def update_output_varelager(): tømmer ouput, og fyller den med innholdet fra list_varelager    
-         
 #Funksjonene bak "List alle ordre - knappen"
 
 def ordre_db_til_objekt(ordretupplefradb: tuple):
